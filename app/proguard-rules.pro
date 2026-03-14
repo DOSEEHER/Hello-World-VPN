@@ -19,3 +19,22 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# --- HelloWorld Custom Rules ---
+
+# Keep Gomobile mandatory classes
+-keep class go.** { *; }
+
+# Keep V2Ray bridge classes
+-keep class libv2ray.** { *; }
+
+# Keep Hysteria bridge classes
+-keep class hybridge.** { *; }
+
+# Keep BuildConfig because we use it for sensitive configUrl
+-keep class com.istilllive.helloworld.BuildConfig { *; }
+
+# Preserve JNI method names
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
