@@ -16,6 +16,9 @@
 4.  **极致简洁与易用** - **零配置**：无多余选项，无广告，不索取无关权限。
     - **一键连接**：打开即用，支持桌面下拉快捷开关。
 
+### 联系我们
+mailto: dev@istill.live
+
 ### 开源声明
 本项目基于 **Hysteria 2** 开源协议开发。为了商业可持续性，用户可在 Google Play 下载包含高级服务的商业版本。
 
@@ -32,6 +35,9 @@
 3.  **Optimized Network Resilience** Instead of chasing inflated "peak speed" numbers, we focus on penetrating unreliable networks. It carves out a stable dedicated line (100Mbps Up / 40Mbps Down by default), ensuring smooth 8K YouTube streaming even in harsh network conditions.
 4.  **Minimalist & User-Friendly** - **Zero Configuration**: No redundant settings, no ads, and no unnecessary permissions.
     - **One-Tap Connection**: Simple toggle switch with support for Android Quick Settings (Tile service).
+
+### Contact Us
+mailto: dev@istill.live
 
 ### Open Source & Commercial Version
 This application is developed based on the **Hysteria 2** protocol. While the core logic is open for public audit, a commercial version with premium service nodes is available for download on Google Play.
