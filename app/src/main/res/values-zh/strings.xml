@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Hello World</string>
+    
+    <!-- MainActivity -->
+    <string name="status_analyzing">正在分析网络...</string>
+    <string name="status_connected">已连接</string>
+    <string name="status_disconnected">已断开连接</string>
+    <string name="subtitle_wait">请稍候...</string>
+    <string name="subtitle_protected">您的 Internet 连接已受保护</string>
+    <string name="subtitle_unprotected">您的 Internet 连接不是私密的</string>
+    <string name="btn_app_picker">可单独指定被守护的应用</string>
+    <string name="toast_connection_failed">连接失败，请检查网络</string>
+    <string name="content_desc_back">返回</string>
+    <string name="title_app_picker">选择要守护的应用</string>
+    <string name="content_desc_more">更多</string>
+    <string name="menu_clear_all">重新勾选 (清空全部)</string>
+    <string name="menu_hide_system">隐藏系统服务</string>
+    <string name="menu_show_system">显示系统服务</string>
+    <string name="status_global_mode">当前为全局守护模式</string>
+    <string name="status_selected_apps">已选择 %d 个应用</string>
+    <string name="label_system">[系统] %s</string>
+    
+    <!-- ProxyVpnService -->
+    <string name="channel_name">VPN Service</string>
+    <string name="channel_desc">VPN status notification</string>
+    <string name="notif_title_vpn">Hello World VPN</string>
+    <string name="notif_starting">正在启动代理...</string>
+    <string name="notif_connected">VPN 已连接</string>
+    
+    <!-- HysteriaCoreService -->
+    <string name="notif_title_core">Hysteria2 Core</string>
+    <string name="notif_core_running">Hysteria2 核心正在运行</string>
+    
+    <!-- VpnTileService -->
+    <string name="tile_label">Hello World</string>
+    <string name="tile_on">已开启</string>
+    <string name="tile_off">已关闭</string>
+    <string name="toast_grant_permission">请先打开 APP 授予 VPN 权限</string>
+    <string name="tile_syncing">正在同步配置...</string>
+    <string name="toast_sync_failed">同步配置失败，请检查网络</string>
+    <string name="tile_turning_on">正在开启...</string>
+    <string name="tile_turning_off">正在关闭...</string>
+</resources>

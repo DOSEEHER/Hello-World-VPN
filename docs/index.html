@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Hello World VPN</title>
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --text-color: #333;
+            --bg-color: #fff;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: var(--text-color); max-width: 800px; margin: 0 auto; padding: 20px; background: var(--bg-color); }
+        
+        /* 切换按钮样式 */
+        .lang-switch { display: flex; justify-content: flex-end; margin-bottom: 20px; gap: 10px; }
+        .lang-btn { padding: 8px 16px; border: 1px solid var(--primary-color); background: transparent; color: var(--primary-color); cursor: pointer; border-radius: 20px; transition: 0.3s; font-weight: 500; }
+        .lang-btn.active { background: var(--primary-color); color: white; }
+        
+        h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 0; }
+        h2 { color: #2c3e50; margin-top: 30px; }
+        .highlight { background-color: #f8f9fa; border-left: 4px solid var(--primary-color); padding: 15px; margin: 20px 0; }
+        ul { padding-left: 20px; }
+        footer { margin-top: 50px; font-size: 0.9em; color: #777; border-top: 1px solid #eee; padding-top: 20px; text-align: center; }
+
+        /* 控制显示隐藏 */
+        [lang="en"] { display: none; }
+    </style>
+</head>
+<body>
+
+    <div class="lang-switch">
+        <button class="lang-btn active" onclick="setLang('zh')">中文</button>
+        <button class="lang-btn" onclick="setLang('en')">English</button>
+    </div>
+
+    <article id="content-zh" lang="zh">
+        <h1>隐私政策</h1>
+        <p>最近更新日期：2026年3月13日</p>
+        <p><strong>Hello World VPN</strong> 深知隐私对您的重要性。我们的政策很简单：<strong>我们不监视您，不追踪您，也不存储您的任何上网数据。</strong></p>
+        
+        <div class="highlight">
+            <strong>核心原则：</strong> 我们坚持最小化数据收集。本应用不设用户注册系统，不收集姓名、邮箱或手机号。
+        </div>
+
+        <h2>1. 核心权限：VpnService</h2>
+        <p>本应用基于 Android <code>VpnService</code> 实现。该权限用于建立加密隧道。我们<strong>不会</strong>通过该权限拦截、收集或存储您的任何浏览记录或数据内容。</p>
+
+        <h2>2. 数据收集与日志</h2>
+        <p>我们严格执行“无日志”政策。不记录 IP 地址、连接时间戳或访问的网站。应用内无任何第三方广告或分析追踪插件。</p>
+
+        <h2>3. Google Play 订阅与支付</h2>
+        <p>所有交易通过 <strong>Google Play Billing System</strong> 完成。我们不接触您的财务信息。我们仅通过匿名交易 ID 验证订阅状态以解锁服务。</p>
+
+        <h2>4. 联系我们</h2>
+        <p>如有疑问，请通过 GitHub 仓库或 Google Play 开发者联系方式与我们联系。</p>
+    </article>
+
+    <article id="content-en" lang="en">
+        <h1>Privacy Policy</h1>
+        <p>Last Updated: March 13, 2026</p>
+        <p><strong>Hello World VPN</strong> respects your privacy. Our policy is simple: <strong>We do not monitor you, we do not track you, and we do not store your online activity data.</strong></p>
+
+        <div class="highlight">
+            <strong>Core Principle:</strong> We adhere to data minimization. No registration is required, and we do not collect names, emails, or phone numbers.
+        </div>
+
+        <h2>1. Core Permission: VpnService</h2>
+        <p>This App uses Android <code>VpnService</code> to create an encrypted tunnel. We <strong>do not</strong> use this to intercept, collect, or store your browsing history or data content.</p>
+
+        <h2>2. Data Collection & Logging</h2>
+        <p>We enforce a strict "No-Logs" policy. No IP addresses, timestamps, or websites are recorded. No third-party ads or trackers are included.</p>
+
+        <h2>3. Google Play Subscriptions</h2>
+        <p>Transactions are handled via <strong>Google Play Billing System</strong>. We do not access financial details. We only use anonymous IDs to verify your subscription status.</p>
+
+        <h2>4. Contact Us</h2>
+        <p>If you have questions, please contact us via GitHub or Google Play developer contact information.</p>
+    </article>
+
+    <footer>
+        &copy; 2026 Hello World Project. All rights reserved.
+    </footer>
+
+    <script>
+        function setLang(lang) {
+            // 切换内容显示
+            document.querySelectorAll('article').forEach(el => {
+                el.style.display = 'none';
+            });
+            document.querySelector('#content-' + lang).style.display = 'block';
+
+            // 切换按钮状态
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>

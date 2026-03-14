@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Hello World</string>
+    
+    <!-- MainActivity -->
+    <string name="status_analyzing">Analyzing network...</string>
+    <string name="status_connected">Connected</string>
+    <string name="status_disconnected">Disconnected</string>
+    <string name="subtitle_wait">Please wait...</string>
+    <string name="subtitle_protected">Your Internet connection is protected</string>
+    <string name="subtitle_unprotected">Your Internet connection is not private</string>
+    <string name="btn_app_picker">Per-App proxy settings</string>
+    <string name="toast_connection_failed">Connection failed, please check network</string>
+    <string name="content_desc_back">Back</string>
+    <string name="title_app_picker">Select apps to protect</string>
+    <string name="content_desc_more">More</string>
+    <string name="menu_clear_all">Reset (Clear all)</string>
+    <string name="menu_hide_system">Hide system apps</string>
+    <string name="menu_show_system">Show system apps</string>
+    <string name="status_global_mode">Global proxy mode is active</string>
+    <string name="status_selected_apps">Selected %d apps</string>
+    <string name="label_system">[System] %s</string>
+    
+    <!-- ProxyVpnService -->
+    <string name="channel_name">VPN Service</string>
+    <string name="channel_desc">VPN status notification</string>
+    <string name="notif_title_vpn">Hello World VPN</string>
+    <string name="notif_starting">Starting proxy...</string>
+    <string name="notif_connected">VPN Connected</string>
+    
+    <!-- HysteriaCoreService -->
+    <string name="notif_title_core">Hysteria2 Core</string>
+    <string name="notif_core_running">Hysteria2 core is running</string>
+    
+    <!-- VpnTileService -->
+    <string name="tile_label">Hello World</string>
+    <string name="tile_on">On</string>
+    <string name="tile_off">Off</string>
+    <string name="toast_grant_permission">Please open the app to grant VPN permission first</string>
+    <string name="tile_syncing">Syncing config...</string>
+    <string name="toast_sync_failed">Config sync failed, check network</string>
+    <string name="tile_turning_on">Turning on...</string>
+    <string name="tile_turning_off">Turning off...</string>
+</resources>
